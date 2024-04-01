@@ -1,17 +1,23 @@
-README
+# README
 
-Note: Some tests are not completed due to app limitation. Ive commented some part of the code which was not possible to test due to some error.
+## Note
 
-// Page Object
+Some tests are incomplete due to application limitations. Portions of the code have been commented out as they could not be tested due to specific errors encountered.
 
-The approach Ive take to create the page objects is as follows:
+## Page Object Model (POM)
 
-- Using 'get' at the begining means that it will be an iteraction with the element such as click, type or some ther directly iteraction with only that given element.
-- Using 'validate' means that it will include more processes and should be a more complex and comprehensive iteraction, not limited to a single interaction with a element but        multiple iteractions and validations.
+The strategy adopted for creating page objects is described below:
 
-// Commands
+- Prefixing with `get` indicates an interaction with the element, such as click, type, or any other direct interaction with that specific element.
+- Prefixing with `validate` signifies a more complex and comprehensive interaction. It encompasses multiple interactions and validations, going beyond a single interaction with an element.
 
-- Added few commands in order to randomize test data. It can be improved and create more complex iteractions but for the test porpouses and to make it more clean and straight forward it was not overcomplexized.
+## Commands
 
-// Installation
-- To install cypress: npm install cypress --save-dev
+Several commands have been introduced to randomize test data. While there's potential for more sophisticated interactions, the aim was to keep the test purposes straightforward and not overly complex for clarity and ease of understanding.
+
+## Installation
+
+To install Cypress, execute the following command:
+
+```sh
+npm install cypress --save-dev
